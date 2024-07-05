@@ -114,6 +114,19 @@ hr {
     font-family: "Outfit";
 }
 
+.nutr-card {
+    text-align: left;
+    font-family: "Outfit";
+}
+
+.nutr-card p {
+    margin-bottom: 1.5rem;
+}
+
+.nutr-card hr {
+    margin: 1rem 0rem 1rem;
+}
+
 .instr-card ol li::marker {
     font-family: "Outfit";
     font-weight: bold;

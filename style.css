@@ -108,8 +108,14 @@ hr {
     text-align: left;
 }
 
-.instr-card ul li {
+.instr-card ol li {
     line-height: 25px;
+    font-family: "Outfit";
+}
+
+.instr-card ol li::marker {
+    font-family: "Outfit";
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {

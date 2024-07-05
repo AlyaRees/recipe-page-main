@@ -97,6 +97,21 @@ hr {
     margin: 1.5rem 0rem 1.5rem;
 }
 
+.sub-titles {
+    color: hsl(14, 45%, 36%);
+    font-size: 25px;
+    font-family: "Young Serif";
+    margin-bottom: 1rem;
+}
+
+.instr-card {
+    text-align: left;
+}
+
+.instr-card ul li {
+    line-height: 25px;
+}
+
 @media screen and (min-width: 1024px) {
     .menu-card {
         width: 50%;

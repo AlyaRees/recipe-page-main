@@ -182,6 +182,10 @@ hr {
     margin: 1rem 0rem 1rem;
 }
 
+.nutr-card ul {
+    text-align: left;
+}
+
 /* Nutrition values, position on right side, set color, make bold and ensure there is no excess whitespace */
 
 .nutr-span {
@@ -205,12 +209,12 @@ hr {
         padding-bottom: 2.5rem;
     }
 
-    .menu-card h1 {
+    h1 {
     white-space: wrap;
-    text-align: left;
-    margin: 2rem 2rem 1.5rem;
+    text-align: center;
     line-height: 40px;
     font-size: 35px;
+    margin-top: 2rem;
     }
 
 img {
@@ -254,24 +258,27 @@ hr {
         margin-top: 100px;
         border-radius: 20px;
         padding-bottom: 2.5rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     
     img {
         border-radius: 1rem;
-        margin: 2rem 2rem 0rem;
         width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+        white-space: wrap;
     }
 
     p {
+        margin-left: 0;
         text-align: left;
-        font-size: 16px;
-        font-family: "Outfit";
-        line-height: 25px;
-    }
-    
-    h3 {
-        color: hsl(332, 51%, 32%);
-        padding-bottom: 0.5rem;
     }
 
     ul li::marker {
@@ -294,6 +301,7 @@ hr {
     }
  
     .ingr-card {
+        margin-left: 0;
         text-align: left;
     }
   
@@ -319,6 +327,7 @@ hr {
   
     .instr-card {
         text-align: left;
+        margin-left: 0;
         margin-bottom: 1rem;
     }
  
@@ -346,12 +355,21 @@ hr {
         margin: 1rem 0rem 1rem;
     }
     
+.nutr-card ul {
+    text-align: left;
+}
+
+.nutr-card ul ol {
+    margin-left: 2rem;
+}
+
     .nutr-span {
+        margin-left: 0;
+        padding-left: 0;
         font-weight: bold;
         color: hsl(14, 45%, 36%);
-        float: right;
         white-space: nowrap;
-        margin-right: 37%;
+        margin-right: 25%;
     }
 
     .prep-card ul li {
@@ -366,6 +384,10 @@ hr {
 h1 {
     white-space: wrap;
 }
+
+img {
+    width: 100%;
+}
 }
 
 /* Extra large screens (TV etc) */
@@ -373,5 +395,9 @@ h1 {
 @media screen and (min-width: 1201px) {
 .menu-card h1 {
     white-space: nowrap;
+}
+
+img {
+    width: 100%;
 }
 }

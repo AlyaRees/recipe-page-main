@@ -49,8 +49,7 @@ no-wrap ensures that the text does not break when page resizes */
         text-align: center;
         line-height: 40px;
         font-size: 35px;
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
+        margin: 2rem 0rem 1.5rem;
     }
 
 
@@ -70,11 +69,17 @@ img {
         padding: 1.5rem 1.5rem 1.5rem;
 }
 
+h3 {
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 0.5rem;
+}
+
 .ingr-card {
     margin: 2rem 2rem 2rem;
     text-align: left;
     font-family: "Outfit";
 }
+
 
 .ingr-card li::marker {
     color: hsl(14, 45%, 36%);
@@ -89,15 +94,13 @@ hr {
     color: hsl(14, 45%, 36%);
     font-size: 25px;
     font-family: "Young Serif";
-    margin-bottom: 1rem;
     text-align: left;
-    margin-left: 0;
+    margin: 0rem 0rem 1rem;
 }
 
 .instr-card {
-    margin: 2rem 2rem 2rem;
+    margin: 2rem 2rem 1rem;
     text-align: left;
-    margin-bottom: 1rem;
     line-height: 35px;
     font-family: "Outfit";
 }
@@ -118,8 +121,7 @@ hr {
 }
 
 .nutr-card p {
-    margin-bottom: 1.5rem;
-    margin-left: 2rem;
+    margin: 0rem 2rem 1.5rem;
 }
 
 .nutr-card hr {
@@ -142,59 +144,11 @@ hr {
         line-height: 25px;
     }
 
-    h3 {
-        color: hsl(332, 51%, 32%);
-        padding-bottom: 0.5rem;
-    }
-
-    ul li::marker {
-        color: hsl(332, 51%, 32%);
-    }
-
     li {
         padding-left: 1rem;
         margin-left: 1.5rem;
         line-height: 35px;
     }
-
-/* For text in <p> element under heading and Nutrition card 
-Aligns text to the left and sets its size and font
-Sets the space between each line */
-
-/* Sets color and space underneath Preparation time card title */
-
-/* Sets the color of the bullet points inside Preparation time card */
-
-/* For cards with listed items (Instructions, Ingredients and Preparation time)
-padding-left sets the gap between text and bullet points
-margin-left sets the space between text and edge of card 
-line-height sets the space between each line of text*/
-
-/* Sets font type and aligns text to the left. Sets card color, space inside and out of the card and makes the edges curvey */
-
-/* Aligns text inside of Ingredients card to the left */
-
-/* Set font type for text in Ingredients card */
-
-/* Set color for bullet points in Ingredients card */
-
-/* Set default margin, color and size for each <hr> element, (Nutrition card <hr> element has own margin size set) */
-
-/* Set color, font style, size and margin for each subtitle (Ingredients, Instructions and Nutrition) */
-
-/* Align text to left and set margin for instruction card */
-
-/* Set font and space between each line for instructions card */
-
-/* Numbered bullet points for the instruction card section */
-
-/* Nutrition card text on left side and font */
-
-/* Nutrition card paragraph set margin */
-
-/* Set margin for <hr> element inside of Nutrition card ONLY */
-
-/* Nutrition values, position on right side, set color, make bold and ensure there is no excess whitespace */
 
 /* Responsive design  */
 
@@ -205,11 +159,9 @@ line-height sets the space between each line of text*/
         width: 40%;
         margin: auto;
         margin-top: 100px;
+        margin-bottom: 80px;
         border-radius: 20px;
-        padding-bottom: 2.5rem;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding: 2rem 2rem 2rem 2rem;
     }
     
     img {
@@ -297,6 +249,7 @@ line-height sets the space between each line of text*/
     }
     
     .nutr-card p {
+        margin-left: 0;
         margin-bottom: 1.5rem;
     }
    

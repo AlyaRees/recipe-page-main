@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+/* Sets page default with a padding and margin of 0 */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Main body element of the page 
+sets page background color 
+flex-direction makes content displayed as a column
+aligns text in the center
+color sets text color */
+
 body {
     background-color: hsl(30, 54%, 90%);
-    display: flex;
     flex-direction: column;
     text-align: center;
     color: hsl(30, 10%, 34%)
 }
+
+/* Main white menu card 
+Sets card width
+margin auto sets card in center of page
+sets background color to white
+border-radius makes card corners cuvry 
+margin sets space above card 
+padding sets gap between image and card edges*/
+
 
 .menu-card {
     width: 40%;
@@ -24,9 +40,17 @@ body {
     padding: 2.5rem 2.5rem;
 }
 
+/* Makes the corners of the image curvy */
+
 img {
     border-radius: 1rem;
+    width: 100%;
 }
+
+/* For the main heading (Simple Omlette Recipe)
+Sets text font and color and aligns it to the left
+Sets space on top and below title
+no-wrap ensures that the text does not break when page resizes */
 
 h1 {
     color: hsl(24, 5%, 18%);
@@ -34,11 +58,12 @@ h1 {
     margin-top: 1.5rem;
     text-align: left;
     margin-bottom: 1rem;
-}
-
-.no-wrap {
     white-space: nowrap;
 }
+
+/* For text in <p> element under heading and Nutrition card 
+Aligns text to the left and sets its size and font
+Sets the space between each line */
 
 p {
     font-size: 16px;
@@ -47,14 +72,23 @@ p {
     line-height: 25px;
 }
 
+/* Sets color and space underneath Preparation time card title */
+
 h3 {
     color: hsl(332, 51%, 32%);
     padding-bottom: 0.5rem;
 }
 
+/* Sets the color of the bullet points inside Preparation time card */
+
 ul li::marker {
     color: hsl(332, 51%, 32%);
 }
+
+/* For cards with listed items (Instructions, Ingredients and Preparation time)
+padding-left sets the gap between text and bullet points
+margin-left sets the space between text and edge of card 
+line-height sets the space between each line of text*/
 
 li {
     padding-left: 1rem;
@@ -62,40 +96,43 @@ li {
     line-height: 35px;
 }
 
+/* Sets font type and aligns text to the left. Sets card color, space inside and out of the card and makes the edges curvey */
+
 .prep-card {
     font-family: "Outfit";
-    margin-top: 2rem;
+    margin: 2rem 0rem 2rem;
     background-color: hsl(330, 100%, 98%);
     border-radius: 1rem;
     text-align: left;
-    padding: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem 1.5rem;
 }
+
+/* Aligns text inside of Ingredients card to the left */
 
 .ingr-card {
     text-align: left;
 }
 
+/* Set font type for text in Ingredients card */
+
 .ingr-card ul li {
     font-family: "Outfit";
 }
 
-.ingr-title {
-    font-family: "Young Serif";
-    font-size: 25px;
-    color: hsl(14, 45%, 36%);
-    margin-bottom: 1rem;
-}
+/* Set color for bullet points in Ingredients card */
 
 .ingr-card li::marker {
     color: hsl(14, 45%, 36%);
 }
 
+/* Set default margin, color and size for each <hr> element, (Nutrition card <hr> element has own margin size set) */
+
 hr {
     border-top: 1px hsl(24, 5%, 18%);
     margin: 1.5rem 0rem 1.5rem;
 }
+
+/* Set color, font style, size and margin for each subtitle (Ingredients, Instructions and Nutrition) */
 
 .sub-titles {
     color: hsl(14, 45%, 36%);
@@ -104,34 +141,48 @@ hr {
     margin-bottom: 1rem;
 }
 
+/* Align text to left and set margin for instruction card */
+
 .instr-card {
     text-align: left;
     margin-bottom: 1rem;
 }
+
+/* Set font and space between each line for instructions card */
 
 .instr-card ol li {
     line-height: 25px;
     font-family: "Outfit";
 }
 
-.nutr-card {
-    text-align: left;
-    font-family: "Outfit";
-}
-
-.nutr-card p {
-    margin-bottom: 1.5rem;
-}
-
-.nutr-card hr {
-    margin: 1rem 0rem 1rem;
-}
+/* Numbered bullet points for the instruction card section */
 
 .instr-card ol li::marker {
     font-family: "Outfit";
     font-weight: bold;
     color: hsl(14, 45%, 36%);
 }
+
+/* Nutrition card text on left side and font */
+
+.nutr-card {
+    text-align: left;
+    font-family: "Outfit";
+}
+
+/* Nutrition card paragraph set margin */
+
+.nutr-card p {
+    margin-bottom: 1.5rem;
+}
+
+/* Set margin for <hr> element inside of Nutrition card ONLY */
+
+.nutr-card hr {
+    margin: 1rem 0rem 1rem;
+}
+
+/* Nutrition values, position on right side, set color, make bold and ensure there is no excess whitespace */
 
 .nutr-span {
     font-weight: bold;
@@ -141,11 +192,186 @@ hr {
     margin-right: 37%;
 }
 
-@media screen and (min-width: 1024px) {
+/* Responsive design  */
+
+/* Ipads and Tablets */
+
+@media screen and (min-width: 481px) {
     .menu-card {
-        width: 50%;
-     }
+        padding: 0;
+        width: 100%;
+        margin: 0 0 0;
+        border-radius: 0;
+        padding-bottom: 2.5rem;
+    }
+
+    .menu-card h1 {
+    white-space: wrap;
+    text-align: left;
+    margin: 2rem 2rem 1.5rem;
+    line-height: 40px;
+    font-size: 35px;
+    }
+
+img {
+    border-radius: 0;
+    width: 100%;
+}
+
+.prep-card {
+    margin: 2rem 2rem 2rem;
+}
+
+.ingr-card {
+    margin: 2rem 2rem 2rem;
+}
+
+.instr-card {
+    margin: 2rem 2rem 2rem;
+}
+
+hr {
+    margin: 2.5rem 2.5rem 2rem;
+}
+
+.nutr-card ul {
+    text-align: center;
+}
+
+    p {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+}
+
+/* Small screens (Laptops etc) */
+
+@media screen and (min-width: 769px) {
+    .menu-card {
+        width: 40%;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding-bottom: 2.5rem;
+    }
+    
     img {
+        border-radius: 1rem;
+        margin: 2rem 2rem 0rem;
         width: 100%;
     }
+
+    p {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Outfit";
+        line-height: 25px;
+    }
+    
+    h3 {
+        color: hsl(332, 51%, 32%);
+        padding-bottom: 0.5rem;
+    }
+
+    ul li::marker {
+        color: hsl(332, 51%, 32%);
+    }
+
+    li {
+        padding-left: 1rem;
+        margin-left: 1.5rem;
+        line-height: 35px;
+    }
+    
+    .prep-card {
+        font-family: "Outfit";
+        margin: 2rem 0rem 2rem;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 1rem;
+        text-align: left;
+        padding: 1.5rem 1.5rem 1.5rem;
+    }
+ 
+    .ingr-card {
+        text-align: left;
+    }
+  
+    .ingr-card ul li {
+        font-family: "Outfit";
+    }
+    
+    .ingr-card li::marker {
+        color: hsl(14, 45%, 36%);
+    }
+    
+    hr {
+        border-top: 1px hsl(24, 5%, 18%);
+        margin: 1.5rem 0rem 1.5rem;
+    }
+    
+    .sub-titles {
+        color: hsl(14, 45%, 36%);
+        font-size: 25px;
+        font-family: "Young Serif";
+        margin-bottom: 1rem;
+    }
+  
+    .instr-card {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+ 
+    .instr-card ol li {
+        line-height: 25px;
+        font-family: "Outfit";
+    }
+    
+    .instr-card ol li::marker {
+        font-family: "Outfit";
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+    }
+    
+    .nutr-card {
+        text-align: left;
+        font-family: "Outfit";
+    }
+    
+    .nutr-card p {
+        margin-bottom: 1.5rem;
+    }
+   
+    .nutr-card hr {
+        margin: 1rem 0rem 1rem;
+    }
+    
+    .nutr-span {
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+        float: right;
+        white-space: nowrap;
+        margin-right: 37%;
+    }
+
+    .prep-card ul li {
+        line-height: 30px;
+    }
+}
+
+/* Large screens (Desktops etc) */
+
+@media screen and (min-width: 1025px) {
+
+h1 {
+    white-space: wrap;
+}
+}
+
+/* Extra large screens (TV etc) */
+
+@media screen and (min-width: 1201px) {
+.menu-card h1 {
+    white-space: nowrap;
+}
 }

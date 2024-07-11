@@ -174,10 +174,10 @@ Aligns the content in the center  */
     margin: 1rem 2rem 1rem;
 }
 
-.nutr-card ul li {
+.nutr-card ul {
     list-style-type: none;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 /* For the Nutrition card values (0g, 20g, etc) 
@@ -348,6 +348,7 @@ margin-bottom sets size og gap on outside around text under Nutrition card title
 /* Aligns the unlisted items (<ul> elements) in Nutrition card (Calories, 277kcal, 0g, Carbs etc) to the left side */
     
 .nutr-card ul {
+    margin-left: 2rem;
     text-align: left;
 }
 

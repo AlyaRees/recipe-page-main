@@ -86,9 +86,10 @@ margin sets the space between the edge of the card and the edge of the white mai
 /* Sets the color of Preparation card title 
 and the space around it  */
 
-h3 {
+.prep-card h2 {
     color: hsl(332, 51%, 32%);
     padding-bottom: 0.5rem;
+    font-size: 20px;
 }
 
 /* Margin sets space around the Ingredients card in the main white card body

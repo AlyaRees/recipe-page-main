@@ -46,10 +46,10 @@ Sets space on top and below title
 no-wrap ensures that the text does not break when page resizes */
 
     h1 {
+        text-align: left;
         color: hsl(24, 5%, 18%);
         white-space: wrap;
         font-family: 'Young Serif';
-        text-align: left;
         line-height: 40px;
         font-size: 35px;
         margin: 2rem 2rem 1.5rem;

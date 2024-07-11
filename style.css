@@ -51,7 +51,7 @@ no-wrap ensures that the text does not break when page resizes */
         white-space: wrap;
         font-family: 'Young Serif';
         line-height: 40px;
-        font-size: 35px;
+        font-size: 30px;
         margin: 2rem 2rem 1.5rem;
     }
 
@@ -77,6 +77,10 @@ margin sets the space between the edge of the card and the edge of the white mai
         border-radius: 1rem;
         text-align: left;
         padding: 1.5rem 1.5rem 1.5rem;
+}
+
+.prep-card li {
+    line-height: 30px;
 }
 
 /* Sets the color of Preparation card title 

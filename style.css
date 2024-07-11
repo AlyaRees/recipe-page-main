@@ -49,10 +49,10 @@ no-wrap ensures that the text does not break when page resizes */
         color: hsl(24, 5%, 18%);
         white-space: wrap;
         font-family: 'Young Serif';
-        text-align: center;
+        text-align: left;
         line-height: 40px;
         font-size: 35px;
-        margin: 2rem 0rem 1.5rem;
+        margin: 2rem 2rem 1.5rem;
     }
 
 
@@ -204,7 +204,7 @@ line-height sets the gap size brtween each line   */
     li {
         padding-left: 1rem;
         margin-left: 1.5rem;
-        line-height: 35px;
+        line-height: 30px;
     }
 
 /* Responsive design  */

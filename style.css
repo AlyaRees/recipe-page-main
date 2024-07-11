@@ -238,11 +238,13 @@ wdith 100% ensures that image takes up entire space around it */
         width: 100%;
     }
 
-    /* margin sets space under main title 
+    /* margin-bottom sets space under main title 
+    margin-left: 0; resets margin to none (from default)
     aligns it to the left side 
     white-space: wrap makes text break when page is resized  */
 
     h1 {
+        margin-left: 0;
         margin-bottom: 1rem;
         text-align: left;
         white-space: wrap;
@@ -260,17 +262,6 @@ wdith 100% ensures that image takes up entire space around it */
     
     ul li::marker {
         color: hsl(332, 51%, 32%);
-    }
-
-/* For listed items on card (<li> elements)
-padding sets space inside on left side of each element 
-margin sets space outside of element on left side 
-line-height sets gap size between each line of text  */
-    
-    li {
-        padding-left: 1rem;
-        margin-left: 1.5rem;
-        line-height: 35px;
     }
     
 /* Targets the Preparation time card 

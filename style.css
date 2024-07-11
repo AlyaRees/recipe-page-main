@@ -348,8 +348,9 @@ margin-bottom sets size og gap on outside around text under Nutrition card title
 /* Targets the ordered listed items (<ol> elemens) inside the unlisted items (<ul> elements) 
 sets space outside of and around text (Calories, Carbs, Protein etc) on left side  */
 
-.nutr-card ul ol {
-    margin-left: 2rem;
+.nutr-card ul li {
+    margin-left: 1.5rem;
+    list-style-type: none;
 }
 
 /* Targets the text in the <span> element on html (277kcal, 0g, 20g etc)

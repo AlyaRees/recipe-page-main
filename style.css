@@ -177,7 +177,7 @@ Aligns the content in the center  */
 .nutr-card ul {
     list-style-type: none;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 /* For the Nutrition card values (0g, 20g, etc) 
@@ -186,12 +186,12 @@ float: right sets it on the right side
 margin: right puts it further along the left on the right side 
 white-space: nowrap ensures that the text does not break as the screen size changes  */
 
-.nutr-span {
+.nutr-card ul li {
     font-weight: bold;
     color: hsl(14, 45%, 36%);
     float: right;
     white-space: nowrap;
-    margin-right: 37%;
+    margin-right: 40%;
 }
 
 /* Targets the <p> elements (the text under main title and Nutrition title)
@@ -356,19 +356,17 @@ margin-bottom sets size og gap on outside around text under Nutrition card title
 sets space outside of and around text (Calories, Carbs, Protein etc) on left side  */
 
 .nutr-card ul li {
-    margin-left: 1.5rem;
     list-style-type: none;
+    float: right;
+    margin-right: 40%;
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
 }
 
 /* Targets the text in the <span> element on html (277kcal, 0g, 20g etc)
 resets the space around (inside and outside) of each element 
 margin-right sets a gap that pushes elements more over to the left side */
 
-    .nutr-span {
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 40%;
-    }
 }
 
 /* Large screens (Desktops etc) */

@@ -155,13 +155,6 @@ sets the font and aligns the text to the left side */
     font-family: "Outfit";
 }
 
-/* For the unlisted items in the Nutrition card (Calories, Cardbs etc) 
-Aligns the content in the center  */
-
-.nutr-card ul {
-    text-align: center;
-}
-
 /* Sets the space around the text under the Nutrition card title  */
 
 .nutr-card p {
@@ -174,24 +167,41 @@ Aligns the content in the center  */
     margin: 1rem 2rem 1rem;
 }
 
-.nutr-card ul {
-    list-style-type: none;
-    text-align: left;
-    margin-left: 20%;
+/* Sets the space around and width of the table and setting it to collapse ensures no double lines */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2.5rem 2rem 2rem;
 }
 
-/* For the Nutrition card values (0g, 20g, etc) 
-sets the font color and makes it bold 
-float: right sets it on the right side 
-margin: right puts it further along the left on the right side 
-white-space: nowrap ensures that the text does not break as the screen size changes  */
+/* Gives each tr in Nutrition card (Carbs 0g, Protein 20g etc) a grey rule underneath */
 
-.nutr-card ul li {
-    font-weight: bold;
+tr { 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Ensures that last tr (Fat 22g) has no bottom border  */
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* sets space around each table data element */
+
+td {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 15%;
+}
+
+/* For values on right side of Nutrition card, sets colour and position */
+
+td:nth-child(even) {
     color: hsl(14, 45%, 36%);
+    font-weight: bold;
     float: right;
-    white-space: nowrap;
-    margin-right: 40%;
+    margin-right: 90%;
 }
 
 /* Targets the <p> elements (the text under main title and Nutrition title)
@@ -338,34 +348,41 @@ margin-bottom sets size og gap on outside around text under Nutrition card title
         margin-bottom: 1.5rem;
     }
 
-    /* Targets the <hr> element (line, or rule) in Nutrition card 
-    resets the space outside of and around each element  */
-   
-    .nutr-card hr {
-        margin: 1rem 0rem 1rem;
-    }
-    
-/* Aligns the unlisted items (<ul> elements) in Nutrition card (Calories, 277kcal, 0g, Carbs etc) to the left side */
-    
-.nutr-card ul {
-    margin-left: 2rem;
-    text-align: left;
+/* Sets the space around and width of the table and setting it to collapse ensures no double lines */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
 }
 
-/* Targets the ordered listed items (<ol> elemens) inside the unlisted items (<ul> elements) 
-sets space outside of and around text (Calories, Carbs, Protein etc) on left side  */
+/* Gives each tr in Nutrition card (Carbs 0g, Protein 20g etc) a grey rule underneath */
 
-.nutr-card ul li {
-    list-style-type: none;
-    float: right;
-    margin-right: 40%;
+tr { 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Ensures that last tr (Fat 22g) has no bottom border  */
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* sets space around each table data element */
+
+td {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/* For values on right side of Nutrition card, sets colour and position */
+
+td:nth-child(even) {
+    margin-right: 75%;
     font-weight: bold;
-    color: hsl(14, 45%, 36%);
+    float: right;
 }
-
-/* Targets the text in the <span> element on html (277kcal, 0g, 20g etc)
-resets the space around (inside and outside) of each element 
-margin-right sets a gap that pushes elements more over to the left side */
 
 }
 

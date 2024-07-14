@@ -200,7 +200,7 @@ td {
 td:nth-child(even) {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
-    float: right;
+    float: left;
     margin-right: 90%;
 }
 
@@ -381,7 +381,7 @@ td {
 td:nth-child(even) {
     margin-right: 75%;
     font-weight: bold;
-    float: right;
+    float: left;
 }
 
 }
